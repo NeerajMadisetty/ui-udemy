@@ -1,4 +1,4 @@
-<h1>Beautiful World</h1>
+<!-- <h1>Beautiful World</h1>
 <input type="text" [(ngModel)]="language" />
 <button (click)="addLang()">Add</button>
 <ul>
@@ -6,4 +6,19 @@
     {{ lang }}
   </li>
 </ul>
-<strong *ngIf="languages_list.length > 7">Congrats</strong>
+<strong *ngIf="languages_list.length > 7">Congrats</strong> -->
+<head>
+  <title>LivePosts</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<app-header></app-header>
+<div class="container">
+  <div class="col-sm-6">
+    <app-post-list></app-post-list>
+  </div>
+</div>
+
